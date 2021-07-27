@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Is Your Birthday Lucky?</title>
-</head>
-<body>
-    <h1>
-        Is Your Birthday Lucky?
-    </h1>
-    <input type="date" name="Birth-Date" id="birth-date">
-    <input type="number" name="Lucky-Number" id="lucky-no">
-    <button type="submit" id="check">Check</button>
-    <p id="result"></p>
+    <link rel="icon" href="assets/cake.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+    <div id="banner">
+      <h1 id="heading">Is Your Birthday Lucky?</h1>
+      <img
+        id="hero-img"
+        src="assets/hero-img.svg"
+        alt="Is Your Birthday Lucky?"
+      />
+      <a id="main-link" href="http://127.0.0.1:5501/index.html#main-app"
+        >Let's Check!</a
+      >
+    </div>
+    <div id="main-app">
+      <p id="privacy-note">
+        Privacy Note: Your data is not being collected
+        <i id="close-note" class="far fa-times-circle"></i>
+      </p>
+      <form class="form-style">
+        <label for="birth-date" class="label-style"
+          >Enter Your Birth Date:
+        </label>
+        <input
+          type="date"
+          name="Birth-Date"
+          id="birth-date"
+          class="input-style"
+        />
+        <label for="lucky-no" class="label-style labelTwo-style"
+          >Enter Your Lucky Number:
+        </label>
+        <input
+          type="number"
+          name="Lucky-Number"
+          id="lucky-no"
+          class="input-style"
+        />
+        <button id="check" class="check-style">Check</button>
+      </form>
+      <div id="final-result">
+        <p id="result" class="result-style"></p>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
+
+<!-- onsubmit="return false" -->
